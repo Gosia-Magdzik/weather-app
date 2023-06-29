@@ -1,66 +1,41 @@
-import { CardContainer, CardDetail } from "./styled";
+import { CardContainer, CardDetail, Icon } from "./styled";
+import wilgotnosc from "./images/humidity.svg";
+import wiatr from "./images/wind.svg";
+import cisnienie from "./images/pressure.svg";
+import wschod from "./images/sunrise.svg";
+import zachod from "./images/sunset.svg";
 
 export const Descriptions = ({ temp_min, temp_max, feels_like, pressure, humidity, wind, sunset, sunrise }) => {
     const cards = [
         {
             id: 1,
-            //icon: <FaArrowDown />,
-            title: "min",
-            data: temp_min.toFixed(),
-            unit: "°C",
-        },
-        {
-            id: 2,
-            //icon: <FaArrowUp />,
-            title: "max",
-            data: temp_max.toFixed(),
-            unit: "°C",
-        },
-        {
-            id: 3,
-            //icon: <BiHappy />,
-            title: "feels like",
-            data: feels_like.toFixed(),
-            unit: "°C",
-        },
-        {
-            id: 4,
-            //icon: <MdCompress />,
+            icon: < Icon src={cisnienie} />,
             title: "pressure",
             data: pressure,
             unit: "hPa",
         },
         {
-            id: 5,
-            //icon: <MdOutlineWaterDrop />,
+            id: 2,
+            icon: <Icon src={wilgotnosc} />,
             title: "humidity",
             data: humidity,
             unit: "%",
         },
         {
-            id: 6,
-            //icon: <FaWind />,
+            id: 3,
+            icon: < Icon src={wiatr} />,
             title: "wind speed",
             data: wind.toFixed(),
             unit: "m/s",
         },
-        {
-            id: 7,
-            //icon: <FaWind />,
-            title: "sunset",
-            data: new Date(1000 * sunset).toLocaleTimeString(),
-            unit: " ",
-        },
-        {
-            id: 8,
-            //icon: <FaWind />,
-            title: "sun rice",
-            data: new Date(1000 * sunrise).toLocaleTimeString(),
-            unit: " ",
-        },
     ]
 
     return(
+        <>
+        <div>
+        Now it feels feels like {feels_like.toFixed()} °C <br/>
+        the temperature is felt in the range from {temp_min.toFixed()} °C to {temp_max.toFixed()} °C
+        </div>
         <CardContainer>
             {cards.map(({id, icon, title, data, unit}) => (
                 <CardDetail key={id}>
@@ -69,6 +44,16 @@ export const Descriptions = ({ temp_min, temp_max, feels_like, pressure, humidit
                     <h2>{`${data} ${unit}`}</h2>
                 </CardDetail>
             ))}
+            <div>
+                < Icon src={zachod} />
+                {new Date(1000 * sunset).toLocaleTimeString()}
+            </div>
+            <div>
+                < Icon src={wschod} />
+                {new Date(1000 * sunrise).toLocaleTimeString()}
+            </div>
         </CardContainer>
+
+        </>
     );
 }

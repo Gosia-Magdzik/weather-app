@@ -4,8 +4,9 @@ import { Background, Container } from "./Globalstyle";
 import { Descriptions } from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
-import hot from "./images/hot.jpg";
-import cold from "./images/cold.jpg"; 
+import hot from "./images/hot.png";
+import cold from "./images/cold.png"; 
+
 
 function App() {
   const [city, setCity] = useState("Paris")

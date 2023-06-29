@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import hot from "./images/hot.jpg";
-import cold from "./images/cold.jpg"; 
+
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -15,15 +14,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    text-align: center;
+    //text-align: center;
     margin: 0 auto;
-    //color: white;
     font-family: 'Antonio', sans-serif;
   }
 `;
 
 export const Background = styled.div`
-  //background-image: url("${cold}");
   background-blend-mode: overlay;
   width: 100%;
   min-height: 100%;
@@ -39,5 +36,6 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 2rem; 
+    border: 1px solid black;
 `;
     

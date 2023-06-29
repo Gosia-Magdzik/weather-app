@@ -1,23 +1,20 @@
 import { Wrapper } from "../inputSection/styled";
-import { Icon, Temperature, Description, Img } from "./styled";
-import { useState } from "react";
+import { Icon, Temperature, Description, Img, Title } from "./styled";
 
 export const DataPart = ({city, country, icon, description, temp}) => {
-    
-    const [units, setUnits] = useState("metric");
-    
+        
     return(
         <Wrapper>
-            <Icon>
-                <Description>
+                <Title>
                     {city},
                     {" "}
                     {country}
-                </Description>
+                </Title>
+            <Temperature>{temp.toFixed()} °C</Temperature>
+            <Icon>
                 <Img src={icon}/>
                 <Description>{description}</Description>
             </Icon>
-            <Temperature>{`${temp.toFixed()} °${units === "metric" ? "C" : "F"}`}</Temperature>
         </Wrapper>
     );
 }
