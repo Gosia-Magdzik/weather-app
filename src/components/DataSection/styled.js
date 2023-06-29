@@ -14,7 +14,7 @@ export const Temperature = styled.p`
     padding: 15px;
 `;
 
-export const Desription = styled.p`
+export const Description = styled.p`
     font-size: 30px;
 `;
 

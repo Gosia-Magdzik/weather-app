@@ -24,8 +24,9 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Background = styled.div`
   background-image: url("${cold}");
+  background-blend-mode: overlay;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -37,6 +38,6 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem; 
 `;
     
