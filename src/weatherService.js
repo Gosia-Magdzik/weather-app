@@ -15,6 +15,7 @@ const getFormattedWeatherData = async (city, units = 'metric') => {
             wind: { speed },
             sys: { country },
             name,
+            sys: { sunset, sunrise }
         } = data;
     
     const { description, icon } = weather[0]
@@ -31,6 +32,8 @@ const getFormattedWeatherData = async (city, units = 'metric') => {
         speed,
         country,
         name,
+        sunset,
+        sunrise,
     };
 }
 
