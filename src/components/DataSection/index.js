@@ -1,12 +1,15 @@
 import { Wrapper } from "../inputSection/styled";
 import { Icon, Temperature, Desription, Img } from "./styled";
-import icon from "../../images/icon.svg"
 
-export const DataPart = () => {
+export const DataPart = ({city, country, icon}) => {
     return(
         <Wrapper>
             <Icon>
-                <Desription>London, GB</Desription>
+                <Desription>
+                    {city},
+                    {" "}
+                    {country}
+                </Desription>
                 <Img src={icon}/>
                 <Desription>Cloudly</Desription>
             </Icon>
