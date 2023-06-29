@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.js": "/weather-app/static/js/main.62039105.js",
+    "main.js": "/weather-app/static/js/main.66e8fe33.js",
     "static/js/787.d9312eb8.chunk.js": "/weather-app/static/js/787.d9312eb8.chunk.js",
-    "static/media/cold.jpg": "/weather-app/static/media/cold.042e3b3ea840bb111731.jpg",
-    "static/media/hot.jpg": "/weather-app/static/media/hot.5b4e49d12ea15a8ebc93.jpg",
-    "static/media/icon.svg": "/weather-app/static/media/icon.8e2b7f59f939fea383b57e2e8f57acd8.svg",
+    "static/media/cold.png": "/weather-app/static/media/cold.a50d5b5b55ad7cabbc72.png",
+    "static/media/pressure.svg": "/weather-app/static/media/pressure.5df0eac86dcc70a92e599b7df8545368.svg",
+    "static/media/humidity.svg": "/weather-app/static/media/humidity.4a9b942f854f1eda271f125447dc0a23.svg",
+    "static/media/wind.svg": "/weather-app/static/media/wind.b0ab6f9eb84f5c7151aa49c1faecbe17.svg",
+    "static/media/sunrise.svg": "/weather-app/static/media/sunrise.9d447f6392dc5433206b70b7e3617de8.svg",
+    "static/media/sunset.svg": "/weather-app/static/media/sunset.f86bb8b3c563696a816b24fe0a8f40e1.svg",
     "index.html": "/weather-app/index.html",
-    "main.62039105.js.map": "/weather-app/static/js/main.62039105.js.map",
+    "main.66e8fe33.js.map": "/weather-app/static/js/main.66e8fe33.js.map",
     "787.d9312eb8.chunk.js.map": "/weather-app/static/js/787.d9312eb8.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.62039105.js"
+    "static/js/main.66e8fe33.js"
   ]
 }
