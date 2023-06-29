@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Background = styled.div`
-  background-image: url("${cold}");
+  //background-image: url("${cold}");
   background-blend-mode: overlay;
   width: 100%;
   min-height: 100%;

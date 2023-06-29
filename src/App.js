@@ -4,15 +4,25 @@ import { Background, Container } from "./Globalstyle";
 import { Descriptions } from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
+import hot from "./images/hot.jpg";
+import cold from "./images/cold.jpg"; 
 
 function App() {
   const [city, setCity] = useState("Paris")
   const [weather, setWeather] = useState(null); 
+  const [bg, setBg] = useState()
 
   useEffect(() => {
     const fetchWeatherData = async () => {
       const data = await getFormattedWeatherData(city)
       setWeather(data);
+
+      const ishot = (temp) => temp >= 0;
+      if (ishot(data.temp)) {
+        setBg(hot);
+      } else {
+        setBg(cold)
+      }
     };
 
     fetchWeatherData(); //call the function
@@ -26,7 +36,9 @@ function App() {
 }
   return (
     <>
-      <Background>
+      <Background
+        style={{ backgroundImage: `url(${bg})` }}
+      >
         {
           weather && (
             <Container>
