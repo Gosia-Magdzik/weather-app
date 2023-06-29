@@ -1,22 +1,14 @@
-import { Wrapper, Input, Button } from "./styled";
+import { Wrapper, Input } from "./styled";
 
-export const InputPart = () => {
-    const enterKeyPressed = (e) => {
-        if (e.keyCode === 13) {
-            setCity(e.currentTarget.value);
-            e.currentTarget.blur()
-        }
-    }
-
+export const InputPart = ({ onKeyDown }) => {
     return(
         <Wrapper>
-            <Input 
-                onKeyDown={enterKeyPressed}
+            <Input
+                onKeyDown={onKeyDown}
                 type="text" 
                 name="city" 
                 placeholder="Enter location..."
             />
-            <Button>°C</Button>
         </Wrapper>
     );
 }

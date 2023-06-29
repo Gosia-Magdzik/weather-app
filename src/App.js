@@ -16,15 +16,23 @@ function App() {
     };
 
     fetchWeatherData(); //call the function
-  }, [])
+  }, [city]);
 
+  const enterKeyPressed = (e) => {
+    if (e.keyCode === 13) {
+        setCity(e.currentTarget.value);
+        e.currentTarget.blur()
+    }
+}
   return (
     <>
       <Background>
         {
           weather && (
             <Container>
-              <InputPart/>
+              <InputPart
+                onKeyDown={ enterKeyPressed }
+              />
               <DataPart
                 city={weather.name}
                 country={weather.country}
