@@ -15,21 +15,31 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    //font-family: 'Red Hat Display', sans-serif;
     text-align: center;
     margin: 0 auto;
     //color: white;
+    font-family: 'Antonio', sans-serif;
   }
 `;
 
 export const Background = styled.div`
   background-image: url("${cold}");
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
   position: absolute;
   background-size: cover;
   background-position: center;
   text-align: center;
   align-items: center;
+`;
+
+export const Container = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid white;
+    max-width: 800px;
+    padding: 2rem;
 `;
     

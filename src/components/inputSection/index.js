@@ -1,10 +1,10 @@
-import { Wrapper, Input } from "./styled";
+import { Wrapper, Input, Button } from "./styled";
 
 export const InputPart = () => {
     return(
         <Wrapper>
             <Input type="text" name="city" placeholder="Enter location..."></Input>
-            <button>°C</button>
+            <Button>°C</Button>
         </Wrapper>
     );
 }
