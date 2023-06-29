@@ -21,7 +21,7 @@ export const Input = styled.input`
     font-size: 30px;
 
     :focus {
-        outline: 1px solid white;
+        outline: none;
     }
 `;
 
@@ -37,7 +37,8 @@ export const Button = styled.button`
 
     &:hover {
         scale: 1.1;
-        background-color: #8fe590bd;
+        background-color: #615656bd;
+        cursor: pointer;
     }
 
     &:active {

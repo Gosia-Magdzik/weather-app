@@ -9,7 +9,8 @@ export const Icon = styled.div`
 `;
 
 export const Temperature = styled.p`
-    font-size: 80px;
+    font-size: 70px;
+    font-weight: 200;
     padding: 15px;
 `;
 

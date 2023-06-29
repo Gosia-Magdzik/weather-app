@@ -29,7 +29,6 @@ export const Background = styled.div`
   position: absolute;
   background-size: cover;
   background-position: center;
-  text-align: center;
   align-items: center;
 `;
 
@@ -37,9 +36,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid white;
-    max-width: 800px;
+    justify-content: center;
     padding: 2rem;
 `;
     
