@@ -1,5 +1,4 @@
-import { Wrapper } from "../inputSection/styled";
-import { Icon, Temperature, Description, Img, Title } from "./styled";
+import { Icon, Temperature, Description, Img, Title, Wrapper } from "./styled";
 
 export const DataPart = ({city, country, icon, description, temp}) => {
         

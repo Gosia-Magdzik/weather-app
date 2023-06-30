@@ -1,4 +1,4 @@
-import { CardContainer, CardDetail, Icon } from "./styled";
+import { CardContainer, CardDetail, Icon, SunWrapper, Sun } from "./styled";
 import wilgotnosc from "./images/humidity.svg";
 import wiatr from "./images/wind.svg";
 import cisnienie from "./images/pressure.svg";
@@ -40,20 +40,21 @@ export const Descriptions = ({ temp_min, temp_max, feels_like, pressure, humidit
             {cards.map(({id, icon, title, data, unit}) => (
                 <CardDetail key={id}>
                     {icon}
-                    <p>{title}</p>
                     <h2>{`${data} ${unit}`}</h2>
+                    <p>{title}</p>
                 </CardDetail>
             ))}
-            <div>
-                < Icon src={zachod} />
-                {new Date(1000 * sunset).toLocaleTimeString()}
-            </div>
-            <div>
-                < Icon src={wschod} />
-                {new Date(1000 * sunrise).toLocaleTimeString()}
-            </div>
         </CardContainer>
-
+        <SunWrapper>
+            <Sun>
+                < Icon src={wschod} />
+                <h2>{new Date(1000 * sunrise).toLocaleTimeString()}</h2>
+            </Sun>
+            <Sun>
+                < Icon src={zachod} />
+                <h2>{new Date(1000 * sunset).toLocaleTimeString()}</h2>
+            </Sun>
+        </SunWrapper>    
         </>
     );
 }

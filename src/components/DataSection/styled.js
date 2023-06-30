@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+    align-self: left;
+    margin-left: -30px;
+`;
+
 export const Icon = styled.div`
     justify-content: left;
     align-items: center;
