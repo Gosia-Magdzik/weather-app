@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
     margin: 0 auto;
     padding: 20px;
     justify-content: center;
+    align-items: center;
 
     @media (max-width: 600px) {
         grid-gap: 8px;
