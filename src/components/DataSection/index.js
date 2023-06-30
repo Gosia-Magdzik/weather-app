@@ -1,7 +1,6 @@
 import { Icon, Temperature, Description, Img, Title, Wrapper } from "./styled";
 
 export const DataPart = ({city, country, icon, description, temp}) => {
-        
     return(
         <Wrapper>
                 <Title>

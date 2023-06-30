@@ -17,7 +17,7 @@ export const Input = styled.input`
     background-color: #ffffffbd;
     border: none;
     font-size: 25px;
-    width: 70%;
+    width: 65%;
 
     :focus {
         outline: none;
@@ -26,4 +26,5 @@ export const Input = styled.input`
 
 export const Img = styled.img`
     height: 30px;
+    margin-left: 5px;
 `;

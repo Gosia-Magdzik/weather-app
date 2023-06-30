@@ -40,7 +40,7 @@ export const Descriptions = ({ temp_min, temp_max, feels_like, pressure, humidit
             {cards.map(({id, icon, title, data, unit}) => (
                 <CardDetail key={id}>
                     {icon}
-                    <h2>{`${data} ${unit}`}</h2>
+                    <p>{`${data} ${unit}`}</p>
                     <p>{title}</p>
                 </CardDetail>
             ))}

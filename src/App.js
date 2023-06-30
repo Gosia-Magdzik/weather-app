@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
 import hot from "./images/hot.png";
 import cold from "./images/cold.png"; 
-
+import { Clock } from "./components/Clock";
 
 function App() {
   const [city, setCity] = useState("Paris")
@@ -35,6 +35,7 @@ function App() {
         e.currentTarget.blur()
     }
 }
+
   return (
     <>
       <Background
@@ -46,6 +47,7 @@ function App() {
               <InputPart
                 onKeyDown={ enterKeyPressed }
               />
+              <Clock/>
               <DataPart
                 city={weather.name}
                 country={weather.country}
