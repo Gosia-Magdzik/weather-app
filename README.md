@@ -1,3 +1,24 @@
+<div align="center">
+
+# Weather App <img src="./iconReadMe.png" height="35"/> 
+
+ <img src="./screen.png" height="300"/> 
+
+# Demo website: [link](gosia-magdzik.github.io/weather-app/)
+
+Application allows You to check weather condition depending on the city city you enter on the input field on the top. 
+
+</div>
+
+# Description
+
+- <b>dynamic background</b> which changes based on temperature. If the temperature is below 0 degrees Celsius, the project's color scheme turns with blue snowflake,
+- fully <b>responsive</b> design with attention to detail,
+- <b>details</b> section include current's pressure, humidity and wind speed,
+- time of <b>sun rice</b> and <b>sunset</b> is displaying below,
+- application is using data from openweathermap.org.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,11 +34,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
