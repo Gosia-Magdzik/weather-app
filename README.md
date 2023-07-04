@@ -16,7 +16,8 @@ Application allows You to check weather condition depending on the city city you
 - fully <b>responsive</b> design with attention to detail,
 - <b>details</b> section include current's pressure, humidity and wind speed,
 - time of <b>sun rice</b> and <b>sunset</b> is displaying below,
-- application is using data from openweathermap.org.
+- application is using data from <a>openweathermap.org,</a>
+- The current date is displaying below the temperature.
 
 
 # Getting Started with Create React App
